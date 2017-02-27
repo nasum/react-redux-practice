@@ -1,0 +1,22 @@
+{
+  "name": "react-redux-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nasum/react-redux-practice.git",
+  "author": "nasum <tomato.wonder.life@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -p --colors",
+    "build:watch": "webpack --watch --colors"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.10",
+    "webpack": "^2.2.1"
+  }
+}
