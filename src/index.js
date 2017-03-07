@@ -6,9 +6,17 @@ var element = document.createElement('div');
 element.id = "app";
 document.body.appendChild(element)
 
-const element = <h1>hello world</h1>
+function tick(){
+  const element = (
+    <div>
+      <h1>hello world</h1>
+      It is {new Date().toLocaleTimeString()}.
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('app')
+  );
+}
 
-ReactDOM.render(
-  element,
-  document.getElementById('app')
-);
+setInterval(tick, 1000)
