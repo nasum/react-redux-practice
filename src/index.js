@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Welcome from './components/Welcome.jsx';
 import Clock from './components/Clock.jsx';
+import ActionButton from './components/ActionButton.jsx';
 
 // initial target dom
 var element = document.createElement('div');
@@ -13,6 +14,7 @@ function app(){
     <div>
       <Welcome name="nasum" />
       <Clock date={new Date()}/>
+      <ActionButton />
     </div>
   )
 }
