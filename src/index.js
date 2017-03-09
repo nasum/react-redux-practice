@@ -17,11 +17,7 @@ function app(){
   )
 }
 
-function tick(){
-  ReactDOM.render(
-    app(),
-    document.getElementById('app')
-  );
-}
-
-setInterval(tick, 1000);
+ReactDOM.render(
+  app(),
+  document.getElementById('app')
+);
