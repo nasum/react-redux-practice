@@ -7,8 +7,16 @@ var element = document.createElement('div');
 element.id = "app";
 document.body.appendChild(element)
 
-const helloElements = <Welcome name="nasum" />;
+function multiName(){
+  return (
+    <div>
+      <Welcome name="nasum" />
+      <Welcome name="masaya" />
+      <Welcome name="nasu" />
+    </div>
+  )
+}
 ReactDOM.render(
-  helloElements,
+  multiName(),
   document.getElementById('app')
 );
