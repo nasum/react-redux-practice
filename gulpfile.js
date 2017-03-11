@@ -11,5 +11,4 @@ gulp.task('create:component', function(){
     .pipe(gRename(args.name + '.jsx'))
     .pipe(gReplace(/ComponentTemplate/g, args.name))
     .pipe(gulp.dest('./src/components'))
-  console.log(args)
 });
