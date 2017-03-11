@@ -6,8 +6,9 @@
   "author": "nasum <tomato.wonder.life@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev:build": "webpack -p --colors --config ./webpack.config.dev.js",
-    "dev:build:watch": "webpack --watch --colors --config ./webpack.config.dev.js"
+    "build": "webpack --colors --config ./webpack.config.dev.js",
+    "build:watch": "webpack --watch --colors --config ./webpack.config.dev.js",
+    "build:production": "webpack -p --colors --config ./webpack.config.prod.js"
   },
   "dependencies": {
     "react": "^15.4.2",

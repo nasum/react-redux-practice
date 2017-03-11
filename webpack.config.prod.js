@@ -5,14 +5,9 @@ const baseConfig = require('./webpack.config.base.js');
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 module.exports = webpackMerge(baseConfig, {
-  devtool: 'inline-source-map',
-  plugins: [
+  plugins:[
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development')
-    }),
-    new WebpackBuildNotifierPlugin({
-      title: "Build",
-      logo: path.resolve("./img/favicon.png")
+      'process.env.NODE_ENV': JSON.stringify('production')
     })
   ]
 });
