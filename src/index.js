@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import Welcome from './components/Welcome.jsx';
 import Clock from './components/Clock.jsx';
 import ActionButton from './components/ActionButton.jsx';
-import ListArea from './components/ListArea.jsx'
+import ListArea from './components/ListArea.jsx';
+import MyForm from './components/MyForm.jsx';
 
 // initial target dom
 var element = document.createElement('div');
@@ -17,6 +18,7 @@ function app(){
       <Clock date={new Date()}/>
       <ActionButton />
       <ListArea />
+      <MyForm />
     </div>
   )
 }
