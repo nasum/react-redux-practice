@@ -20,7 +20,6 @@ export default class ListArea extends React.Component {
   }
 
   render(){
-    console.log(this.state.numbers)
     const listItems = this.state.numbers.map((number) =>
       <ListItem key={number.toString()} data={number} />
     );
