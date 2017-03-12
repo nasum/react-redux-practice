@@ -8,6 +8,7 @@
   "scripts": {
     "build": "webpack --colors --config ./webpack.config.dev.js",
     "build:watch": "webpack --watch --colors --config ./webpack.config.dev.js",
+    "build:server": "webpack-dev-server --watch --colors --config ./webpack.config.dev.js",
     "build:production": "webpack -p --colors --config ./webpack.config.prod.js",
     "gulp": "gulp"
   },
@@ -29,6 +30,7 @@
     "minimist": "^1.2.0",
     "webpack": "^2.2.1",
     "webpack-build-notifier": "^0.1.13",
+    "webpack-dev-server": "^2.4.1",
     "webpack-merge": "^4.0.0"
   }
 }
